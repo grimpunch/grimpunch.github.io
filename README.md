@@ -1,4 +1,5 @@
 grimpunch.github.io
 ===================
 
-Temporary Static Page for my portfolio until my blog is made
+The homepage for myself, Christian Murphy.
+Designed to show my blog and my github to people of the net.
