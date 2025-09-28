@@ -7,7 +7,7 @@ on:
       - master
 
 env:
-  WEBAPP_PATH: BlazorStaticCallingCard
+  WEBAPP_PATH: grimpunch.github.io
   WEBAPP_CSPROJ: BlazorStaticCallingCard.csproj
   ASPNETCORE_ENVIRONMENT: Production
 
