@@ -5,7 +5,6 @@
 @inject BlazorStaticService blazorStaticService
 
 
-
 <ul class="divide-y   divide-gray-700">
     @foreach (var post in posts.OrderByDescending(x => x.FrontMatter.Published))
     {
@@ -58,7 +57,7 @@
 
     protected override void OnInitialized()
     {
-        posts = Posts != null ? Posts.OrderBy(x => x.FrontMatter.Published).ToList() : blazorStaticContentService.Posts;
+        posts = Posts != null ? Posts.Where(x=> !x.FrontMatter.IsDraft).OrderBy(x => x.FrontMatter.Published).ToList() : blazorStaticContentService.Posts;
         base.OnInitialized();
     }
 
